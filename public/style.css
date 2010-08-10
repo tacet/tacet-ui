@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+#date_selection > div {
+    display: inline;
+}
+
+#date_selection input.date {
+    width: 80px;
+}
+
+#date_selection input.time {
+    width: 40px;
+}
+
+.calendar {
+    position: absolute;
+    border: 1px solid #ccc;
+    padding: 3px;
+}
+
+.calendar td.week_number {
+    font-size: 9px;
+    padding-right: 5px;
+    color: #666;
+}
+
+.calendar td.day {
+    padding: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.calendar td.day.offday {
+    color: #ccc;
+}
+
+.calendar td.day.today,
+.calendar td.day.today:hover {
+    background-color: #eeeecc;
+}
+
+.calendar td.day:hover {
+    background-color: #cceeee;
+}
